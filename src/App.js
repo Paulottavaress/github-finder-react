@@ -1,16 +1,17 @@
-import React, { Fragment, Component } from 'react';
+import React, { Component } from 'react';
+import Navbar from './components/layout/Navbar';
+import UserItem from './components/users/UserItem';
 import './App.css';
 
 class App extends Component{
   render(){
-    const name = 'John Doe';
-    const loading = false;
-    const showName = true;
+    const numbers = [1,2,3,4];
 
     return (
-      <Fragment>
-        {loading ? <h4>Loading...</h4> : <h1>Hello {showName && name}</h1>}
-      </Fragment>
+      <div className='App'>
+        <Navbar icon={"fab fa-github"} title={"Github Finder"} />
+        <UserItem />
+      </div>
     );
   }
 }
