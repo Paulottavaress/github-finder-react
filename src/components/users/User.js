@@ -29,7 +29,7 @@ const User = ({ match}) => {
         public_repos,
         public_gists,
         hireable
-    } = user;
+} = user;	
 
     if (loading) return <Spinner />;
 
